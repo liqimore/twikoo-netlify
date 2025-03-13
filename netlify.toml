@@ -1,4 +1,6 @@
 [[headers]]
-  for = "/*" # you can configure the correct paths here
+  for = "/*"  # Match all paths
   [headers.values]
-    access-control-allow-origin = "*" # see a list of allowed values here: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin
+    Access-Control-Allow-Origin = "*"  # or specify your allowed domains here
+    Access-Control-Allow-Headers = "Origin, X-Requested-With, Content-Type, Accept"
+    Access-Control-Allow-Methods = "GET, POST, PUT, DELETE, OPTIONS"
